@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мемы: язык сетевой коммуникации</title>
+<link rel="stylesheet" href="sitekochbrat.css" />
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Свои стили -->
+    <link rel="stylesheet" href="sitekochbrat.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+           <div class="logo-wrap">
+    <a href="#hero" class="logo">MemeIgum</a>
+    <button id="smile-btn" class="smile-btn" aria-label="Смайлик" title="Нажми меня 🙂">
+        🙂
+    </button>
+</div>
+            <nav class="main-nav">
+                <a href="#trending" class="nav-link">Популярные мемы</a>
+                <a href="#about" class="nav-link">О мемах</a>
+                <a href="#types" class="nav-link">Типы мемов</a>
+                <a href="#history" class="nav-link">История мемов</a>
+                <a href="#stats" class="nav-link">Мем-статистика</a>
+            </nav>
+
+            <button id="theme-toggle" title="Переключить тему" aria-label="Тёмная/Светлая тема">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1>Интернет‑мемы:<br>язык цифровой эпохи</h1>
+                <p class="hero-subtitle">
+                    Мем — это единица культурной информации, которая распространяется в сети и формирует особый стиль общения
+                </p>
+                <a href="#trending" class="cta-button">Смотреть мемы</a>
+            </div>
+        </section>
+
+        <!-- Популярные мемы -->
+        <section id="trending" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Популярные мемы</h2>
+                <div class="memes-grid" id="memes"><!-- JS --></div>
+            </div>
+        </section>
+
+        <!-- О мемах -->
+        <section id="about" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Мемы как форма коммуникации</h2>
+                <div class="about-content">
+                    <p>
+                        В цифровой среде мемы выполняют роль «сокращённых смыслов»: они экономят слова,
+                        передают эмоции и создают чувство принадлежности к сообществу.
+                    </p>
+                    <ul class="features-list">
+                        <li>Эмоциональная маркировка</li>
+                        <li>Кодирование смысла</li>
+                        <li>Формирование групповой идентичности</li>
+                        <li>Ирония и критика</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Типы мемов -->
+        <section id="types" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Типы мемов по функциям</h2>
+                <div class="types-grid">
+                    <div class="type-card">
+                        <h3>Реакционные</h3>
+                        <p>Выражают мгновенную реакцию на событие или высказывание</p>
+                    </div>
+                    <div class="type-card">
+                        <h3>Ироничные</h3>
+                        <p>Используют сарказм и преувеличение для критики</p>
+                    </div>
+                    <div class="type-card">
+                        <h3>Внутригрупповые</h3>
+                        <p>Понятны только определённому сообществу</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- История -->
+        <section id="history" class="section-padding bg-gradient-light">
+            <div class="container">
+                <h2 class="section-title">Краткая история мемов</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">2000-е</span>
+                        <div class="content">
+                            Первые вирусные мемы — «Rickroll», «LOLcats». Становятся массовым явлением
+                            благодаря форумам и ранним соцсетям.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2010-е</span>
+                        <div class="content">
+                            Расцвет мемов: «Distracted Boyfriend», «Doge», «This is fine».
+                            Мемы — часть поп-культуры.
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2020-е</span>
+                        <div class="content">
+                            Мемы в TikTok, Reels, сторис. Инструмент маркетинга и политической коммуникации.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Статистика -->
+        <section id="stats" class="section-padding">
+            <div class="container stats-container">
+                <h2 class="section-title">Мем-культура в цифрах</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">10B+</span>
+                        <span class="stat-label">Просмотров мем-контента ежедневно</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-label">Новых мемов в месяц</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">Пользователей используют мемы для общения</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 MemeIgum. Мемы как форма сетевой коммуникации.</p>
+            <button id="back-to-top" aria-label="Наверх">↑</button>
+        </div>
+    </footer>
+
+    <!-- Модальное окно — вынесено из header -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close" aria-label="Закрыть">&times;</button>
+            <img id="modal-image" src="" alt="" />
+            <h3 id="modal-title">Заголовок</h3>
+            <p id="modal-desc">Описание</p>
+        </div>
+    </div>
+
+    <!-- Один скрипт — всё в sitekochbrat.js -->
+    <script src="sitekochbrat.js" defer></script>
+    <!-- Уведомление о создателе -->
+<div id="toast" class="toast" role="status" aria-live="polite">
+    <span class="toast-emoji">🎓</span>
+    <span class="toast-text">
+        Сайт сделал ученик <strong>10 «А»</strong> класса
+        <strong>Игуменцев Артём</strong>
+    </span>
+</div>
+    <link rel="stylesheet" href="sitekochbrat.css" />
+</body>
+</html>
